@@ -36,9 +36,10 @@ The data is updated only in the cache and updated into the memory at a later tim
      * The theory behind this type of caching technique is "**Low latency, high volume**" i.e., complete processing of data for multiple applications in the lowest time frame possible.
      
   ## Eviction Policy
+  
 Based on the above caching techniques many eviction policies can be created which can thus be used to update the cache. The following points discuss the various eviction policies:
 
-   * #### LRU (Least Recently Used)
+  * #### LRU (Least Recently Used)
 
       * LRU is the most popular policy due to several reasons. It is simple, has good runtime performance, and a decent hit rate in common workloads. As the name suggests this policy evicts the least recently used item first from the cache. When the cache becomes full, it removes the least recently used data and the latest entry is added into the cache. 
       * This type of eviction policy can be said to be based losely on the temporal caching technique.
