@@ -1,7 +1,11 @@
 # Caching
 
 Cache is a technique of storing a copy of data temporarily in rapidly accessible storage memory. Cache stores most recently used words in small memory to increase the speed at which data is accessed. It acts as a buffer between RAM and CPU and thus increases the speed at which data is available to the processor. Whenever a Processor wants to write a word, it checks to see if the address it wants to write the data to, is present in the cache or not. If the address is present in the cache i.e., Write Hit. We can update the value in the cache and avoid expensive main memory access. But this results in Inconsistent Data Problem. As both cache and main memory have different data, it will cause problems in two or more devices sharing the main memory (as in a multiprocessor system).
-
+  ##### Write Through
+    In write-through, data is simultaneously updated to cache and memory. This process is simpler and more reliable. But it is mostly efficient when it comes to less amount of changes being made to the caches memory. As data writing creates a latency, multiple changes being made will result in higher latency which goes against the aim of caching.
+  ##### Write Back
+    The data is updated only in the cache and updated into the memory at a later time. It only updates the main memory when the cache line is ready to be updated. This is risky as there might be unsaved data which maybe lost in the case of a power outage.
+    
   ## Aim of caching.
    * Increase efficiency
    * Reduce process time
