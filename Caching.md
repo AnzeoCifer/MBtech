@@ -1,11 +1,11 @@
-#Caching
+# Caching
 
-##Aim of caching.
+## Aim of caching.
 
-*Increase efficiency
+* Increase efficiency
 
-*Reduce process time
+* Reduce process time
 
-*Avoid load on database
+* Avoid load on database
 
-*Save network call
+* Save network call
