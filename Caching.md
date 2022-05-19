@@ -21,11 +21,13 @@ The data is updated only in the cache and updated into the memory at a later tim
      * Imports data from the local cluster of the previous hit.
      * Based on the theory that the next required data set would be available in the current data cluster.
      * Makes hits on the local cluster based on the most recenlty used data.
+     * Based on **Spatial Locality**. In Spatial Locality, nearby instructions to recently executed instruction are likely to be executed soon.**It is also known as locality in space**.	It only refers to data item which are closed together in memory.
    * ### Temportal Caching Technique
      * Caching technique based on the frequency of the data usage.
      * Creates a data set at faster levels of cache memory.
      * Based on the theory that the most frequently data set might be required further down the process.
      * Imports a data set, then based on the usage of the data, keeps the most used data in faster levels of the cache memory.
+     * Based on **Temporal Locality**. In Temporal Locality, a recently executed instruction is likely to be executed again very soon. **It is also known as locality in time**. It repeatedly refers to same data in short time span.
    * ### Distributed Caching Technique
      * A combination of both spatial and temporal caching techniques.
      * In distributed caching, multiple applications retrieve data from a server cache. Therefore, to process such requests at a higher speed multiple instances of the cache memory must be created. Those instances are then used to cater to the needs of the requesting applications.
@@ -39,7 +41,7 @@ Based on the above caching techniques many eviction policies can be created whic
    * #### LRU (Least Recently Used)
 
       * LRU is the most popular policy due to several reasons. It is simple, has good runtime performance, and a decent hit rate in common workloads. As the name suggests this policy evicts the least recently used item first from the cache. When the cache becomes full, it removes the least recently used data and the latest entry is added into the cache. 
-      * This type of eviction policy can be said to be based losely on the spatial caching technique.
+      * This type of eviction policy can be said to be based losely on the temporal caching technique.
       * We can implement the LRU using a doubly-linked list and a hash function containing the reference of the node in the list. 
 
     * #### LFU (Least Frequently Used)
