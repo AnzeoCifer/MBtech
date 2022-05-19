@@ -45,17 +45,17 @@ Based on the above caching techniques many eviction policies can be created whic
       * This type of eviction policy can be said to be based losely on the temporal caching technique.
       * We can implement the LRU using a doubly-linked list and a hash function containing the reference of the node in the list. 
 
-    * #### LFU (Least Frequently Used)
+  * #### LFU (Least Frequently Used)
 
       * This policy counts the frequency of each requested item and discards the least frequent one from the cache. So here we count the number of times a data item is accessed, and we keep track of the frequency for each item. When the cache size reaches a given threshold we remove the entry with the lowest frequency. 
       * This type of eviction policy can be said to be based on the temporal caching technique.
  
-    * #### MRU (Most Recently Used)
+  * #### MRU (Most Recently Used)
 
       * This approach removes the most recently used item from the cache. We give preference to the older item to remain in the cache. This approach is suitable in cases where a user is less interested in checking out the latest data or item. 
       * This kind of eviction policy is not suitable for process that require the latest data to complete the task at hand. This is mainly used in cases where the user is more interested in the older data sets. For example, user's inventory in games.
 
-    * #### Random Replacement
+  * #### Random Replacement
 
       * As the name suggests we randomly select an item and discard it from the cache to make space whenever necessary. 
       * This is an unordered eviction without a proper pattern, thus it is a risk to use this policy.
