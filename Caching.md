@@ -4,11 +4,11 @@ Cache is a technique of storing a copy of data temporarily in rapidly accessible
   
   ##### Write Through
     
-    In write-through, data is simultaneously updated to cache and memory. This process is simpler and more reliable. But it is mostly efficient when it comes to less amount of changes being made to the caches memory. As data writing creates a latency, multiple changes being made will result in higher latency which goes against the aim of caching.
+In write-through, data is simultaneously updated to cache and memory. This process is simpler and more reliable. But it is mostly efficient when it comes to less amount of changes being made to the caches memory. As data writing creates a latency, multiple changes being made will result in higher latency which goes against the aim of caching.
   
   ##### Write Back
     
-    The data is updated only in the cache and updated into the memory at a later time. It only updates the main memory when the cache line is ready to be updated. This is risky as there might be unsaved data which maybe lost in the case of a power outage.
+The data is updated only in the cache and updated into the memory at a later time. It only updates the main memory when the cache line is ready to be updated. This is risky as there might be unsaved data which maybe lost in the case of a power outage.
     
   ## Aim of caching.
    * Increase efficiency
