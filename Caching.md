@@ -62,7 +62,8 @@ Based on the above caching techniques many eviction policies can be created whic
 
       * As the name suggests we randomly select an item and discard it from the cache to make space whenever necessary. 
       * This is an unordered eviction without a proper pattern, thus it is a risk to use this policy.
-
+## Final thoughts
+Caching is a method used to increase the efficiency of the system by reducing the latency of the process. This is done via using a local, but faster, memory. There are various techniques that can be used for the purpose of caching, based on which further methods of caching can be created. As for which caching technique is most suitable, it is completely based on the requirement of the user.
 
 ## References
 
