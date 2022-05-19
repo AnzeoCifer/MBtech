@@ -63,7 +63,7 @@ Based on the above caching techniques many eviction policies can be created whic
 
 ## References
 
-  * [Caching Techniques] (https://www.youtube.com/watch?v=ccemOqDrc2I)
+  * [Caching Techniques](https://www.youtube.com/watch?v=ccemOqDrc2I)
   * https://www.youtube.com/watch?v=U3RkDLtS7uY
   *  https://www.geeksforgeeks.org/difference-between-spatial-locality-and-temporal-locality/
   * https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/?ref=gcse
