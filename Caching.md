@@ -60,3 +60,11 @@ Based on the above caching techniques many eviction policies can be created whic
       * As the name suggests we randomly select an item and discard it from the cache to make space whenever necessary. 
       * This is an unordered eviction without a proper pattern, thus it is a risk to use this policy.
 
+
+## References
+
+  * [Caching Techniques] (https://www.youtube.com/watch?v=ccemOqDrc2I)
+  * https://www.youtube.com/watch?v=U3RkDLtS7uY
+  *  https://www.geeksforgeeks.org/difference-between-spatial-locality-and-temporal-locality/
+  * https://www.geeksforgeeks.org/caching-system-design-concept-for-beginners/?ref=gcse
+
